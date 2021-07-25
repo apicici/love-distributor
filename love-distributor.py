@@ -14,6 +14,7 @@ parser = argparse.ArgumentParser(
 )
 
 subparsers = parser.add_subparsers(title="system", dest="system")
+subparsers.required = True
 
 parser_linux = subparsers.add_parser(
     "linux", formatter_class=argparse.ArgumentDefaultsHelpFormatter
